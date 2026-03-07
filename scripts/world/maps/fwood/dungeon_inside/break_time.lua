@@ -10,7 +10,7 @@ return {
   tilewidth = 40,
   tileheight = 40,
   nextlayerid = 6,
-  nextobjectid = 14,
+  nextobjectid = 16,
   properties = {
     ["border"] = "castle",
     ["music"] = "jamm_dungeon"
@@ -143,6 +143,22 @@ return {
           properties = {
             ["cutscene"] = "a_dungeon.breaktime"
           }
+        },
+        {
+          id = 15,
+          name = "transition",
+          type = "",
+          shape = "rectangle",
+          x = 640,
+          y = 440,
+          width = 40,
+          height = 120,
+          rotation = 0,
+          visible = true,
+          properties = {
+            ["map"] = "fwood/dungeon_inside/freezer_hall",
+            ["marker"] = "entry"
+          }
         }
       }
     },
@@ -193,6 +209,19 @@ return {
           shape = "point",
           x = 120,
           y = 144,
+          width = 0,
+          height = 0,
+          rotation = 0,
+          visible = true,
+          properties = {}
+        },
+        {
+          id = 14,
+          name = "exit",
+          type = "",
+          shape = "point",
+          x = 600,
+          y = 500,
           width = 0,
           height = 0,
           rotation = 0,

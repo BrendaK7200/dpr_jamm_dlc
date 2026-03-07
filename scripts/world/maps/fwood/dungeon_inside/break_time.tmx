@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="16" height="18" tilewidth="40" tileheight="40" infinite="0" nextlayerid="6" nextobjectid="14">
+<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="16" height="18" tilewidth="40" tileheight="40" infinite="0" nextlayerid="6" nextobjectid="16">
  <editorsettings>
   <export target="break_time.lua" format="lua"/>
  </editorsettings>
@@ -64,6 +64,12 @@
     <property name="cutscene" value="a_dungeon.breaktime"/>
    </properties>
   </object>
+  <object id="15" name="transition" x="640" y="440" width="40" height="120">
+   <properties>
+    <property name="map" value="fwood/dungeon_inside/freezer_hall"/>
+    <property name="marker" value="entry"/>
+   </properties>
+  </object>
  </objectgroup>
  <objectgroup id="4" name="markers">
   <object id="10" name="entry" x="300" y="40">
@@ -73,6 +79,9 @@
    <point/>
   </object>
   <object id="13" name="dess_walkto" x="120" y="144">
+   <point/>
+  </object>
+  <object id="14" name="exit" x="600" y="500">
    <point/>
   </object>
  </objectgroup>
