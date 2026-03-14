@@ -1,7 +1,7 @@
 local FreezerSoul, super = Class(Soul)
 
 function FreezerSoul:init(x, y)
-    super:init(self, x, y)
+    super.init(self, x, y)
 	
 	self:setColor(0, 1, 1)
 	

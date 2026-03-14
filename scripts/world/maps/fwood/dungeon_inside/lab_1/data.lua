@@ -10,7 +10,7 @@ return {
   tilewidth = 40,
   tileheight = 40,
   nextlayerid = 7,
-  nextobjectid = 14,
+  nextobjectid = 15,
   properties = {
     ["border"] = "castle",
     ["music"] = "jamm_dungeon",
@@ -208,6 +208,22 @@ return {
           rotation = 0,
           visible = true,
           properties = {}
+        },
+        {
+          id = 14,
+          name = "transition",
+          type = "",
+          shape = "rectangle",
+          x = 800,
+          y = 200,
+          width = 40,
+          height = 120,
+          rotation = 0,
+          visible = true,
+          properties = {
+            ["map"] = "fwood/dungeon_inside/lab_2",
+            ["marker"] = "entry"
+          }
         }
       }
     },
