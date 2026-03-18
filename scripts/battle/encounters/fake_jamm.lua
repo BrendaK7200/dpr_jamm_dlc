@@ -30,6 +30,7 @@ end
 
 function Dummy:onGameOver()
     Game.battle.state = "FAKEGAMEOVER"
+    Game.battle.darkener:undarken()
     Game.battle:returnSoul()
     Game.battle.arena:remove()
     for _, battler in ipairs(Game.battle.party) do
@@ -72,11 +73,8 @@ end
 function Dummy:update()
     super.update(self)
 
-    if Game.battle.state == "FAKEGAMEOVER" then
-        Game.battle.background_fade_alpha = math.max(Game.battle.background_fade_alpha - (0.05 * DTMULT), 0)
-        if Game.battle.background_fade_alpha == 0 then
-            Game.battle:updateTransitionOut()
-        end
+    if Game.battle.state == "FAKEGAMEOVER" and not Game.battle.darkener then
+        Game.battle:updateTransitionOut()
     end
 end
 
